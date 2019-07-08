@@ -26,9 +26,8 @@ For python version 3.X you need to specify :
 `sudo pip3 install pillow`
 
 #### Screenshots
-<img src="./ss/1.png" height=350> <img src="./ss/2.png" height=350>
+<img src="./ss/1.png" height=350> <img src="./ss/2.png" height=350> <img src="./ss/4.png" height=350>
 <img src="./ss/3.png" height=350>
-<img src="./ss/4.png" height=350>
 
 #### Precautions
 - The encoded output image should not be compressed or resized during transmission otherwise it will get corrupt and hidden text will be lost. 
