@@ -9,6 +9,7 @@ import tkinter as tk
 import steganography as algo
 import generate_key as keys
 import webbrowser
+from tkinter import filedialog
 
 class Page(tk.Frame):
     def __init__(self, *args, **kwargs):
@@ -30,7 +31,7 @@ class encodePage(Page):
     
     def browseFile(self):
         try:
-            filename = tk.filedialog.askopenfile()
+            filename = filedialog.askopenfile()
             self.label_floc.config(text="Image Selected!")
             self.filepath = filename.name
             print(self.filepath)
@@ -93,7 +94,7 @@ class decodePage(Page):
         
     def browseFile(self):
         try:
-            filename = tk.filedialog.askopenfile()
+            filename = filedialog.askopenfile()
             self.label_floc.config(text="Image Selected!")
             self.filepath = filename.name
             print(self.filepath)
@@ -247,3 +248,4 @@ if __name__ == "__main__":
     main.pack(side="top", fill="both", expand=True)
     root.wm_geometry("400x500")
     root.mainloop()
+    

@@ -32,7 +32,7 @@ def encodePic(msg, pk, imgurl):
             newpic.putpixel((r,c),(R,G,B))
     #newpic.show()
     #save as png always because others are lossy compression format.
-    newpic.save("../secret.png")
+    newpic.save("./secret.png")
     return newpic
 
 def decodePic(pk,imgurl):
