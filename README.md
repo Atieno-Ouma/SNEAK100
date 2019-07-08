@@ -21,9 +21,9 @@ In other words, steganography is more discreet than cryptography when we want to
 #### LSB based Data Embedding
 LSB stands for Least Significant bit. The idea behind LSB embedding is that if we change the last bit value of a pixel, there won't be much visible change in the color.  In my program, I have modified the last four bits of R-Channel to store the encrypted message which is in hexadecimal form.
 ## Preview of Program
+To run the program on Windows platform, you can just click on `SNEAK100.exe` file. For other platforms, you can run it yourself by running following command `python src/main.py`.
+
 Entire code is written in Python3. PIL library is used for image manipulation steps. For GUI, I have used tkinter library which is standard Python interface to the Tk GUI toolkit, and is Python's de facto standard GUI. Tkinter is included with standard Linux, Microsoft Windows and Mac OS X installs of Python. If you dont have PIL installed in your system, you will need to install it.
-For python version 3.X you need to specify : 
-`sudo pip3 install pillow`
 
 #### Screenshots
 <img src="./ss/1.png" height=325> <img src="./ss/2.png" height=325> <img src="./ss/4.png" height=325>
